@@ -1,14 +1,37 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /* Hide the default checkbox */
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        /* Style the custom checkbox */
+        .custom-checkbox {
+            width: 20px;
+            height: 20px;
+            background-color: blue;
+            display: inline-block;
+            border-radius: 3px;
+            position: relative;
+            cursor: pointer;
+            
+
+            
+        }
+    </style>
 </head>
 <body>
-    <button>clickme</button>
-    <script>
-        alert("hello");
-    </script>
+    
+    <input  type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <label  for="vehicle1"> I have a bike</label><br>    
 </body>
 </html>
+
+
+     

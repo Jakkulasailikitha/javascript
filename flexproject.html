@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex assignment</title>
+    <script src="https://kit.fontawesome.com/1b07026199.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    *{
+        box-sizing:border-box ;
+        margin:0;
+    }
+    .top{
+        width:802px;
+        height:400px;
+        background-color: cadetblue;
+    }
+    .insidetop{
+        width:800px;
+        height:30px;
+        display: flex;
+        background-color: darkgreen;
+        justify-content: space-evenly;
+        padding:3px;
+        cursor: pointer;
+    }
+    .inside_top:hover{
+        color: chartreuse;
+    }
+    .inside_top1{
+        display: flex;   
+    }
+    .z{
+        margin: 2px;   
+    }
+    .z:hover{
+        color: darkgoldenrod;
+    }
+    button{
+        border-radius: 7px;
+    }
+    .inside_bottom{
+        display: flex;
+        width:200px;
+        border:2px solid red;
+        justify-content: center;
+    }
+    .inside{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 50px;
+    }
+    .inside_bottom1{
+        text-align: center;
+        margin:20px;   
+    }
+    .a{
+        display: flex;
+        width:60px;
+        height:55px;
+        border: 2px solid rebeccapurple;
+        background-color:aquamarine;
+        border-radius: 5px;   
+        align-items: center; 
+        justify-content: center;  
+    }
+    .b{
+        display: flex;
+        width:60px;
+        height:50px;
+        background-color: pink;
+        border: 2px solid rebeccapurple;
+        border-radius: 5px; 
+        justify-content: center;  
+        align-items: center;
+    }
+    .c{
+        display: flex;
+        width:60px;
+        height:50px;
+        background-color: grey;
+        border: 2px solid rebeccapurple;
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;   
+    }
+    button:hover{
+        cursor: pointer;
+        background-color:blue;
+    }
+    .top2{
+        width:802px;
+        height: 500px; 
+    }
+    .middle{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5px;
+    }
+    .middle1{
+        display: flex;
+        width:200px;
+        height: 200px;
+        border:2px solid red;
+        justify-content: center;
+        overflow-y: scroll;
+        position: relative;
+
+    }
+    .bottom{
+        align-items: center;
+        width:802px;
+        border: 2px solid green;
+        background-color: cadetblue;
+    }
+    .bottom1{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 10px;
+    }  
+    .bottom2{
+        display: flex;
+        display: grid;
+        grid-template-columns: repeat(10,65px);
+        gap:3px;
+        margin-top: 10px;
+        align-items: center;
+        justify-content: center;
+    }  
+    .bottom3{
+        width:802px;
+        display: flex;
+        justify-content: space-between;
+        margin:4px 0;        
+    }
+    .d{
+        width:60px;
+        height:50px;
+        background-color:burlywood;
+        border: 2px solid rebeccapurple;
+        border-radius: 5px;
+    }
+    .e{
+        display: grid;
+        height: 80px; 
+        border: 2px solid ;
+        justify-content: center;
+        align-items: center;
+        background-color:grey;    
+    }
+    .merge{
+        margin-top: 5px;
+        display: grid;
+        grid-template-columns:repeat(10,65px) ;
+        gap: 3px;
+        align-items: center;
+        justify-content: center;
+    }
+    .f{
+        border: 2px solid;
+        grid-column: 3/span 6;
+        grid-row: 1;
+    }
+    .u{
+        margin-left: 62px;
+        width: 65px;
+    }
+    .v{
+        margin-right: 65px;
+        width: 65px;
+    }
+    .merge2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-evenly;
+        margin-top: 5px;
+    }
+    .i{
+        width:65px;
+        height:80px;
+        border: 2px solid;
+        background-color:grey ;    
+    }
+    .merge3{
+        margin-top: 15px;;
+        display: flex;
+        justify-content: center;
+    }
+    .s{
+        width:65px;
+        height:80px;
+        border: 2px solid;
+    }
+    .line{
+        display: flex;
+        border: 1px solid  red;
+        margin: 10px 65px;
+        justify-content: center;   
+    }
+    footer{
+        margin-top: 10px;
+        height:40px;
+        background-color:blueviolet;
+        border:2px solid none;
+        display: flex;
+        justify-content: center; 
+    }
+    .fo{
+        display: flex;
+        gap:15px;
+        justify-content: center;
+        align-items: center;
+    }
+    .float{
+        position: relative;
+    }
+    .mango{
+        position: relative;
+    }
+    .banana{
+        position: relative;
+    }
+    .arrow{
+        margin: 0px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .head{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .head2{
+        margin-right: 250px;
+    }
+    .f1:hover{
+        cursor: pointer;
+        color: blue;
+    }
+    #section{
+        position: sticky;
+        top: 0px;
+        margin-top: 60px;
+    }
+</style>
+<body>
+    <div class="top">
+        <div  class="insidetop">
+           <div class="inside_top">
+                FLOAT,
+                POSITION &
+                FLEX
+            </div>
+            <div class="inside_top1">
+                <p class="z">home</p>
+                <p class="z">about</p>
+                <p class="z">services</p>
+            </div>
+            <div class="inside_top2">
+                <button>Signup</button>
+                <button>Login</button>
+            </div>
+        </div>  
+        <div class="head head1">POSTIONING ELEMENTS USING FLOATS</div>
+        <div class="inside">
+            <div class="inside_bottom">
+                <div class="inside_bottom1"> 
+                    <div class="a">Section1</div>
+                    <div class="b">Section2</div>
+                    <div class="c">Section3</div>
+                </div>  
+            </div>
+            <div class="inside_bottom">
+                <div class="inside_bottom1"> 
+                    <div class="a">Section1</div>
+                       <div class="banana">
+                            <div class="b">Section2</div>
+                            <div  style="position:absolute; margin-left: -63px; margin-top: -50px; margin-right: 10px;"  class ="c">Section3</div>
+                        </div>
+                </div>  
+            </div> 
+            <div class="inside_bottom">
+                <div class="inside_bottom1"> 
+                    <div class="a">Section1</div>
+                    <div class="float">
+                        <div class="b">Section2</div>
+                        <div  style="margin-left: 63px; margin-top: -50px;"  class ="c">Section3</div>
+                    </div>                
+                </div>  
+            </div>
+       </div>
+    </div>
+    <div class="head head2">UNIQUELY POSITIONING CONTENT</div>
+    <div class="top2">
+        <div class="inside">
+            <div class="inside_bottom">
+                <div class="inside_bottom1"> 
+                    <div class="a">Section1</div>
+                    <div class="b">Section2</div>
+                    <div class="c">Section3</div>
+                </div>  
+            </div>
+            <div class="inside_bottom">
+                <div class="inside_bottom1"> 
+                    <div class="a">Section1</div>
+                        <div class="mango">
+                            <div style="position: absolute; margin-left: 30px; margin-top: -35px;" class="b">Section2</div>
+                            <div  style="margin-top: 70px;" class="c">Section3</div>
+                        </div>
+                </div>  
+            </div>  
+            <div class="inside_bottom">
+                <div class="inside_bottom1"> 
+                    <div class="a">Section1</div>
+                       <div class="banana">
+                            <div class="b">Section2</div>
+                            <div  style="position:absolute; margin-left: -60px; margin-top: -50px;"  class ="c">Section3</div>
+                        </div>
+                </div>  
+            </div> 
+       </div>
+       <div class="middle">
+          <div class="middle1">
+            <p style="position: relative;font-size: 10pz;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni porro tempora voluptatum maiores assumenda, sapiente veritatis eligendi itaque hic, earum exercitationem, doloremque cum libero velit quibusdam? Aperiam quibusdam eius sint iure dolor beatae delectus possimus, culpa, nulla repellendus nisi. Aspernatur ea quasi asperiores corrupti, eum cum repellat. Unde, enim molestias! Eaque dolore sequi iste asperiores rem fuga illo eum velit autem non veniam harum mollitia necessitatibus porro sapiente voluptatem voluptas omnis aut, culpa pariatur nobis numquam eligendi voluptate. Suscipit architecto quas natus dignissimos hic voluptatem minima exercitationem ut consequatur omnis similique maxime repellendus, modi unde consectetur odit praesentium nihil. Amet debitis perferendis quidem possimus rem, et iusto reprehenderit saepe aut accusamus iure quis commodi laborum illum deleniti enim vero reiciendis ratione ad nostrum temporibus? Nisi nam, voluptatum vero saepe voluptates nobis dignissimos? Temporibus quod omnis modi, voluptate doloribus minus unde laudantium. Fugiat praesentium tenetur quaerat ipsa distinctio nostrum, dicta quisquam! Vitae vel eius perspiciatis sint dolor nobis necessitatibus alias molestias velit iusto! A eveniet placeat assumenda dicta quas porro nulla commodi enim aut. Reprehenderit voluptatem minima atque alias, dolorum neque? Repudiandae molestias qui modi vel nam? Maxime velit, accusamus fuga est itaque quae saepe aliquid laborum minus perspiciatis, molestias expedita.</p>
+            <div class="arrow" style="text-align: center; position: sticky;top: 0px; ">
+                <div  class="a" id="section" style="position: st; top: 0px;">Section 1</div>
+            </div>
+            </div>
+       </div>
+    </div>
+    <div class="bottom">
+        <div class="head head1">POSTIONING WITH FLEX</div>
+        <div class="bottom1">
+            <div class="a">Section1</div>
+            <div class="b">Section2</div>
+            <div class="c">Section3</div>
+            <div class="d">section4</div>
+        </div>
+        <div class="line"></div>
+        <div class="bottom2">
+            <div class="e">Section1</div>
+            <div class="e">Section2</div>
+            <div class="e">Section3</div>
+            <div class="e">Section4</div>
+            <div class="e">Section5</div>
+            <div class="e">Section6</div>
+            <div class="e">Section7</div>
+            <div class="e">Section8</div>
+            <div class="e">Section9</div>
+            <div class="e">Section10</div>
+            <div class="e">Section11</div>
+            <div class="e">Section12</div>
+            <div class="e">Section13</div>
+            <div class="e">Section14</div>
+            <div class="e">Section15</div>
+            <div class="e">Section16</div>
+            <div class="e">Section17</div>
+            <div class="e">Section18</div>
+            <div class="e">Section19</div>
+            <div class="e">Section20</div>
+        </div>
+        <div class="bottom3">
+            <div class="e u">Section1</div>
+            <div class="e v">Section2</div>
+        </div>
+        <div class="line"></div>
+        <div class="merge">
+            <div class="e">Section1</div>
+            <div class="e">Section2</div>
+            <div class="e f">Section3</div>
+            <div class="e">Section4</div>
+            <div class="e">Section5</div>
+        </div>
+        <div class="line"></div>
+        <div class="merge2">
+            <div class="i ">Section1</div>
+            <div class="i">Section2</div>
+            <div class="i">Section3</div>
+            <div class="i">Section4</div>
+            <div class="i ">Section5</div>
+        </div>
+        <div class="merge3">
+            <div style="background-color: grey;" class="s">Section1</div>
+        </div>
+        <div class ="arrow" style="width: 20px; height: 20px; border: 2px solid red; margin-left: 765px;" >
+            <a href="#" ><i style="color:black; " class ="fa-solid fa-arrow-up"></i></a>
+        </div>
+        <footer>
+            <div class="fo">
+                <div class="f1"><i class="fa-brands fa-square-instagram"></div></i>                
+                <div class="f1"><i  class="fa-brands fa-square-youtube"></i></div>
+                <div class="f1"><i class="fa-brands fa-facebook"></i></div>
+                <div class="f1"><i class="fa-brands fa-square-twitter"></i></div>
+                <div class="f1"><i class="fa-brands fa-linkedin"></i></div>
+            </div>
+        </footer>
+    </div>    
+</body>
+</html>

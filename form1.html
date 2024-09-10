@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="house icon" href="family-house-facade.png" type="png">
+</head>
+<body>
+    <h1>HTML Forms</h1>
+    <form>
+        <fieldset>
+            <legend>Authorization </legend>
+            <label>Login</label>
+            <input type="text" placeholder="">
+            <label>password</label>
+            <input type="password"><br>
+            <button>Submit</button>
+        </fieldset>
+    </form>
+    <pre>
+
+    </pre>
+    <form>
+        <fieldset>
+            <legend>Registration</legend>
+            <label>Name<input type="text"></label><br>
+            <label>Surname<input type="text" placeholder=""></label><br>
+            <label>Name<input type="text" placeholder=""></label><br>
+            <label>Gender</label><br>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+            <input type="radio" name="gender" value="other"> Other<br>
+            <label>Date Of Birth <input type="date"></label><br>
+            <label for ="country">select the country</label>
+            <input list="select" id="country" name="country"/>
+            <!-- <select> -->
+            <datalist  id="select">
+                <optgroup labe=" India">
+                    <option value="chitoor">chitoor</option>
+                </optgroup>
+                <option  value="India">India</option>
+                <option  value="America">America</option>
+                <option  value="Antartica">America</option>
+                <option  value="China">China</option>
+                <option  value="Japan">Japan</option>
+                <option  value="France">France</option> 
+                
+            </datalist>
+                <!-- <option name="Country" value="Select">Select</option>
+                <option name="Country" value="India">India</option>
+                <option name="Country" value="America">America</option>
+                <option name="Country" value="China">China</option>
+                <option name="Country" value="Japan">Japan</option>
+                <option name="Country" value="France">France</option> -->
+            </select><br>                                                                   
+            <label> Favourite Color <input type="color"></label><br>
+            <label> Password <input type="password"></label><br>
+            <label>Repeat Password <input input type="password"></label><br>
+            <label>Email <input input type="email"></label><br>
+            <button>Register</button>
+        </fieldset>
+    </form>
+    <hr>
+    </fieldset>
+</body>
+</html>
